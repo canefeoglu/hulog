@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hulog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-02">
+					</button>
+					<a href="#fakelink" class="brand fui-flat"></a>
+					<div class="nav-collapse collapse" id="nav-collapse-02">
+						<form class="navbar-search form-search pull-right" action="">
+							<div class="input-append">
+								<input type="text" class="search-query span2" placeholder="Search">
+								<button type="submit" class="btn btn-large">
+									<i class="fui-search"></i>
+								</button>
+							</div>
+						</form>
+
+						<ul class="nav pull-right">
+							<li class="active">
+								<a href="#fakelink">
+									<span class="fui-user"></span><span class="hidden-desktop">My Account</span>
+								</a>
+							</li>
+							<li>
+								<a href="#fakelink">
+									<span class="fui-mail"></span><span class="hidden-desktop">Messages</span>
+									<span class="navbar-new">1</span>
+								</a>
+							</li>
+							<li>
+								<a href="#fakelink">
+									<span class="fui-gear"></span><span class="hidden-desktop">Settings</span>
+								</a>
+							</li>
+						</ul> <!-- /nav -->
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<%= yield %>
+		</div>
+	</div>
+	
+	<div class="bottom-menu">
+		<div class="container">
+			<div class="row">
+				<div class="span2 brand">
+					<a href="#fakelink" class="fui-flat"></a>
+				</div>
+
+				<div class="span8">
+					<ul class="bottom-links">
+						<li><a href="#fakelink">About Us</a></li>
+						<li><a href="#fakelink">Store</a></li>
+						<li class="active"><a href="#fakelink">Jobs</a></li>
+						<li><a href="#fakelink">Privacy</a></li>
+						<li><a href="#fakelink">Terms</a></li>
+						<li><a href="#fakelink">Follow Us</a></li>
+						<li><a href="#fakelink">Support</a></li>
+						<li><a href="#fakelink">Links</a></li>
+					</ul>
+				</div>
+
+				<div class="span2">
+					<ul class="bottom-icons">
+						<li><a href="#fakelink" class="fui-pinterest"></a></li>
+						<li><a href="#fakelink" class="fui-facebook"></a></li>
+						<li><a href="#fakelink" class="fui-twitter"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
