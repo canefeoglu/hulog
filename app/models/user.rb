@@ -40,11 +40,11 @@ class User < ActiveRecord::Base
        provider:auth.provider,
        uid:auth.uid,
        email:auth.info.email,
-       birthday: DateTime.strptime(auth.extra.raw_info.birthday, "%m/%d/%Y").to_date,
        password:Devise.friendly_token[0,20],
        location: auth.info.location,
        fb_image_url: auth.info.image,
-       gender: auth.extra.raw_info.gender
+       gender: auth.extra.raw_info.gender,
+       birthday: DateTime.strptime(auth.extra.raw_info.birthday, "%m/%d/%Y")
        )
      end
      user
