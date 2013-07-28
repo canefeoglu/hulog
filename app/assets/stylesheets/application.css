@@ -11,3 +11,27 @@
  *= require_self
  *= require_tree .
  */
+
+#fb_pic {
+   border-radius: 6px;
+   overflow: hidden;
+   margin-top: 12px;
+}
+
+.yo {
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.logo {
+	margin-left: -60;
+}
+
+.menu_item {
+	height: 76px !important;
+}
+
+a {
+	padding-top: 23px !important;
+}
